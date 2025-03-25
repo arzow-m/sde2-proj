@@ -1,10 +1,10 @@
 '''
-extractQ2.py
+extractQ1.py
 
     Author(s): Teigen Crook (1331121), Arzow Maksum (1337424), Andrew McLean (1328723), Syed Raamis (1334868)
 
-    Project: Milestone 2 Demo
-    Date of last update: Mar 11, 2025
+    Project: final project Q1
+    Date of last update: Mar 25, 2025
 
     Functional Summary:
     Takes in data file containing information about hourly wages for professionals in a diverse amount of industries. 
