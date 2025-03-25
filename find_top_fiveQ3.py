@@ -7,9 +7,7 @@ extractQ3.py
     Date of last update: March 19, 2025
 
     Functional Summary:
-
-
-    Commandline arguments:
+        takes the pre-processed csv file and stores the job vacancy values in an array. It then sorts the array (ascending order) and then stores the top five greatest vacancies in another csv file.
 '''
 
 import csv
@@ -21,7 +19,7 @@ if len(sys.argv) < 1:
     print("incorrect number of command line arguments")
     sys.exit(1)
 
-csv_fh = open("Q3Processed.csv", "r", encoding="utf-16")
+csv_fh = open("Q3Processed.csv", "r",)
 csvfile = csv.reader(csv_fh,delimiter=INPUT_DELIMITER)
 
 for row in csvfile:

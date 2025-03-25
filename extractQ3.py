@@ -7,13 +7,12 @@ extractQ3.py
     Date of last update: March 19, 2025
 
     Functional Summary:
-    Takes in data file containing information about job vacancies for computing professionals by province. Prints out the rows relevent to location, occupation, and job vacancy characteristics.
+    Takes in data file containing information about job vacancies for a specific occupation by province. Prints out the rows relevent to location, occupation, and job vacancy characteristics.
 
-    Commandline arguments: 4
-        argv[1] = name of the input file
-        argv[2] = geographic location
-        argv[3] = year
-        argv[4] = occupation
+    Commandline arguments: 3
+        argv[1] = geographic location
+        argv[2] = year
+        argv[3] = occupation
 '''
 
 import csv
@@ -21,17 +20,16 @@ import sys
 
 INPUT_DELIMITER = ","
 
-if len(sys.argv) < 4:
+if len(sys.argv) < 3:
     print("incorrect number of command line arguments")
     sys.exit(1)
 
 
-datafile = sys.argv[1]
-location_name = sys.argv[2]
-given_year = sys.argv[3]
-given_occupation = sys.argv[4]
+location_name = sys.argv[1]
+given_year = sys.argv[2]
+given_occupation = sys.argv[3]
 
-csv_fh = open(datafile, "r")
+csv_fh = open("14100328.csv", "r")
 csvdata = csv.reader(csv_fh,delimiter=INPUT_DELIMITER)
 
 for row in csvdata:
