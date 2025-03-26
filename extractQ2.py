@@ -1,8 +1,6 @@
 '''
 extractQ2.py
 
-    Author(s): Arzow Maksum (1337424)
-
     Project: Software Design 2 Final Project: Question 2
     Date of last update: Mar 25, 2025
 
