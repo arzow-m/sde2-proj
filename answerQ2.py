@@ -1,8 +1,6 @@
 '''
 answerQ2.py
 
-    Author(s): Arzow Maksum
-
     Project: Software Design 2 Final Project: Question 2
     Date of last update: Mar 25, 2025
 
