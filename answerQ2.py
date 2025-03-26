@@ -1,7 +1,7 @@
 '''
-extractQ3.py
+answerQ2.py
 
-    Author(s): Teigen Crook (1331121), Arzow Maksum (1337424), Andrew McLean (1328723), Syed Raamis (1334868)
+    Author(s): Arzow Maksum (1337424)
 
     Project: Software Design 2 Final Project: Question 2
     Date of last update: Mar 25, 2025
