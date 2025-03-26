@@ -3,7 +3,12 @@ import sys
 
 INPUT_DELIMITER = ","
 
-csv_fh = open("q2_data.csv", "r")
+try:
+    csv_fh = open("q2_data.csv", "r")
+except Exception as err:
+    print(f"Unable to open file 'q2_data.csv': {err}", file=sys.stderr)
+    sys.exit(1)
+    
 csvdata = csv.reader(csv_fh, delimiter= INPUT_DELIMITER)
 
 for row in csvdata:
