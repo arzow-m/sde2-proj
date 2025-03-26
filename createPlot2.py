@@ -1,3 +1,21 @@
+'''
+createPlot2.py
+
+    Author(s): Arzow Maksum (1337424)
+
+    Project: Software Design 2 Final Project: Question 2
+    Date of last update: Mar 25, 2025
+
+    Functional Summary:
+    Reads data from a CSV file `plot2.csv` that contains job occupations and their corresponding average salaries.
+    Processes the data to generate a bar chart visualizing the average full-time wage by occupation.
+    The chart is displayed using Matplotlib, with the x-axis representing the job titles and the y-axis representing the average wage.
+    Error checking ensures that all years in the data are consistent before generating the plot.
+
+    Commandline arguments: 0
+        No commandline arguments required.
+'''
+
 import matplotlib.pyplot as plt
 import numpy as np
 import csv
