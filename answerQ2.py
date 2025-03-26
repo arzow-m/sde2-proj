@@ -8,7 +8,7 @@ extractQ3.py
 
     Functional Summary:
     Reads a CSV file containing job vacancy data, including occupation, full-time status, and hourly wage.
-    Processes the data to calculate the **average yearly salary** for a user-defined occupation for the year 2015.
+    Processes the data to calculate the average yearly salary for a user-defined occupation for a user-defined year.
     Writes the calculated average salary into a new CSV file `plot2.csv` for later use in data visualization.
     The annual salary is calculated based on an 8-hour workday, 5-day workweek, and 4 weeks per month.
 
