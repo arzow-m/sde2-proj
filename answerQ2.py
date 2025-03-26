@@ -1,3 +1,21 @@
+'''
+extractQ3.py
+
+    Author(s): Teigen Crook (1331121), Arzow Maksum (1337424), Andrew McLean (1328723), Syed Raamis (1334868)
+
+    Project: Software Design 2 Final Project: Question 2
+    Date of last update: Mar 25, 2025
+
+    Functional Summary:
+    Reads a CSV file containing job vacancy data, including occupation, full-time status, and hourly wage.
+    Processes the data to calculate the **average yearly salary** for a user-defined occupation for the year 2015.
+    Writes the calculated average salary into a new CSV file `plot2.csv` for later use in data visualization.
+    The annual salary is calculated based on an 8-hour workday, 5-day workweek, and 4 weeks per month.
+
+    Commandline arguments: 0
+        No commandline arguments required.
+'''
+
 import csv
 import sys
 
