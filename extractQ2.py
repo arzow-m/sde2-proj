@@ -1,3 +1,21 @@
+'''
+extractQ2.py
+
+    Author(s): Teigen Crook (1331121), Arzow Maksum (1337424), Andrew McLean (1328723), Syed Raamis (1334868)
+
+    Project: Milestone 3 Question 2
+    Date of last update: Mar 12, 2025
+
+    Functional Summary:
+    Takes in a data file containing information about job vacancies, including job titles and hourly wages.
+    Filters the data to include only full-time, software-related roles for a user-defined occupation and year.
+    Outputs the filtered data into a new CSV file, containing the occupation, year, month, and wage data, for further analysis.
+
+    Commandline arguments: 2
+        argv[1] = the relevant occupation (e.g., "Architects")
+        argv[2] = the year for the data filter (e.g., "2023")
+'''
+
 import sys
 import pandas as pd
 
