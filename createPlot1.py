@@ -16,37 +16,28 @@ import csv
 
 INPUT_DELIMITER = ","
 
-# Open and read the CSV file containing the percentage data
+
 csv_fh = open("plot1.csv", "r")
 csv_plot_file = csv.reader(csv_fh, delimiter=INPUT_DELIMITER)
 
-# Read the header (first row) of the CSV
+
 header = next(csv_plot_file)
 
-# Extract the percentage value from the CSV (assuming percentage is in the third column)
+#Extracting the percentage value from the CSV (assuming percentage is in the third column)
 percentage = 0
 for row in csv_plot_file:
-    percentage = float(row[2].strip())  # Assuming percentage is in the third column of the file
+    percentage = float(row[2].strip())  #Assuming percentage is in the third column of the file
 
-# Calculate the remaining percentage (100 - percentage)
+
 remaining_percentage = 100 - percentage
 
-# Create labels for the pie chart
+#labels n data
 labels = [f"Above Wage Threshold: {percentage:.2f}%", f"Below Wage Threshold: {remaining_percentage:.2f}%"]
-
-# Data for the pie chart
 sizes = [percentage, remaining_percentage]
-
-# Set up colors for the pie chart
-colors = ['#66b3ff', '#ff6666']
-
-# Create the pie chart
+colors = ['#FFA500', '#32CD32']
 plt.figure(figsize=(6, 6))  # Set the figure size to make the chart circular
 plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=90, wedgeprops={'edgecolor': 'black'})
+plt.title("Percentage of Canadian Job Vacancies Requiring a Bachelor's Degree that make Above the Wage Threshold")
 
-# Title the pie chart
-plt.title("Percentage of Job Vacancies Requiring a Bachelor's Degree and Above the Wage Threshold")
-
-# Show the pie chart
-plt.axis('equal')  # Equal aspect ratio ensures the pie chart is circular.
+plt.axis('equal') 
 plt.show()
